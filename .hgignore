@@ -1,0 +1,8 @@
+syntax: regexp
+Debug/*
+Release/*
+ipch/*
+syntax: glob
+Prime Sieve.opensdf
+Prime Sieve.sdf
+Prime Sieve.suo

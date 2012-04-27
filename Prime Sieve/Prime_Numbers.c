@@ -1,19 +1,27 @@
 #include "Prime_Numbers.h"
-
+#include <time.h>
 
 
 list primes(unsigned int n)
 {
-	static element pool[MAX/2];
-	static element *blacklist[MAX/4];
+	element *pool = malloc((n>>1) * sizeof(element));
+	element **blacklist = malloc((n>>2) * sizeof(element *));
 	element *current,*multiplier;
 	unsigned int counter,ereaser,product;
 	list primepool;
 	node *p;
 	unsigned int t;
 
+	if(!(pool && blacklist))
+	{
+		printf("Not enough memory!\n");
+		system("PAUSE");
+		exit(1);
+	}
+
 	t = clock();
-	printf("\nstart at: %u\n",t);
+	/*printf("\nstart at: %u\n",t);*/
+
 	initialize(primepool);
 	n = n/2-1;
 	/* initialize the pool of natural numbers */
@@ -46,7 +54,7 @@ list primes(unsigned int n)
 		{
 			/*printf("|%u|",product);*/
 			blacklist[ereaser++] = &pool[product/2-1];
-			printf("-%u-",blacklist[ereaser-1]->number);
+			/*printf("-%u-",blacklist[ereaser-1]->number);*/
 			multiplier = multiplier->next;
 			product = current->number*multiplier->number;
 		}		
@@ -56,8 +64,8 @@ list primes(unsigned int n)
 			blacklist[ereaser]->previous->next = blacklist[ereaser]->next;
 			if (blacklist[ereaser]->next) blacklist[ereaser]->next->previous = blacklist[ereaser]->previous;
 		}
-		puts("\n");
-		system("PAUSE");
+		/*puts("\n");
+		system("PAUSE");*/
 		/*printf("++!++",product);*/
 		multiplier = current = current->next;
 		product = current->number*multiplier->number;
@@ -72,9 +80,12 @@ list primes(unsigned int n)
 	}
 
 	/* finished. */
+
 	t = clock() - t;
-	printf("\nTime: %u\n",t);
+	printf("\n\nThe sieve took %ums to run.\n",t/(CLOCKS_PER_SEC/1000));
 	system("PAUSE");
+	printf("\n\n\nThe primes from 0 to %u are:\n\n",n);
+
 	return primepool;
 }
 

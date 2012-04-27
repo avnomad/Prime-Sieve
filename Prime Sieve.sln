@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Prime Sieve", "Prime Sieve\Prime Sieve.vcproj", "{ECBA1046-A906-4175-8EF8-E8FA0445801E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECBA1046-A906-4175-8EF8-E8FA0445801E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ECBA1046-A906-4175-8EF8-E8FA0445801E}.Debug|Win32.Build.0 = Debug|Win32
+		{ECBA1046-A906-4175-8EF8-E8FA0445801E}.Release|Win32.ActiveCfg = Release|Win32
+		{ECBA1046-A906-4175-8EF8-E8FA0445801E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

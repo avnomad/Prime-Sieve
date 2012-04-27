@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Prime Sieve", "Prime Sieve\Prime Sieve.vcproj", "{ECBA1046-A906-4175-8EF8-E8FA0445801E}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Prime Sieve", "Prime Sieve\Prime Sieve.vcxproj", "{ECBA1046-A906-4175-8EF8-E8FA0445801E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

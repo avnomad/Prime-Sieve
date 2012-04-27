@@ -5,7 +5,7 @@
 int main()
 {
 	unsigned int n;
-	unsigned int t;
+	/*unsigned int t;*/
 	printf("The sieve will find all primes in the range 0 - N,\nwhere N is the natural number you will supply.\n\nSupply it N: ");
 	scanf("%u",&n);
 

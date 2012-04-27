@@ -17,7 +17,7 @@ typedef node *list;
 #define initialize(list) (list = 0)
 
 /* WARNING!!! the macros wont work properly if given "______6" or an    */
-/* expression contaning it as an argument							    */
+/* expression containing it as an argument							    */
 #define addtostart(data,list) \
 		{\
 			node *______6;\
